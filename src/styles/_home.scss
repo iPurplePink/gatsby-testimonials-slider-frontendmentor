@@ -1,0 +1,99 @@
+.home-container {
+  margin: auto;
+  @include respond(desktop) {
+    max-width: 1440px;
+  }
+
+  @include respond(mobile) {
+    max-width: 375px;
+    .photo-background {
+      display: flex;
+      align-items: center;
+      height: 33rem;
+      max-width: 33rem;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-image: url("../images/pattern-bg.svg");
+      position: relative;
+      text-align: center;
+      margin: auto;
+    }
+    .photo {
+      max-width: 25rem;
+      border-radius: 0.5rem;
+      margin: auto;
+      position: relative;
+      box-shadow: 0 2.5rem 6rem -4rem rgba(0, 0, 0, 1);
+      -webkit-box-shadow: 0 2.5rem 6rem -4rem rgba(0, 0, 0, 1);
+      -moz-box-shadow: 0 2.5rem 6rem -4rem rgba(0, 0, 0, 1);
+    }
+
+    .action-buttons-container {
+      position: absolute;
+      bottom: 1.75rem;
+      left: 0;
+      width: 100%;
+    }
+
+    .button-icon {
+      box-sizing: content-box;
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 1.25rem;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .button-icon.-next {
+      border-radius: 0 2rem 2rem 0;
+    }
+
+    .button-icon.-prev {
+      border-radius: 2rem 0 0 2rem;
+    }
+
+    .testimony-container {
+      position: relative;
+      padding-top: 5.5rem;
+      padding-bottom: 5.5rem;
+      text-align: center;
+      max-width: 33rem;
+      margin: auto;
+    }
+
+    .quotes-icon {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    .quotes-icon-container {
+      position: absolute;
+      left: 0;
+      top: 2rem;
+      width: 100%;
+    }
+
+    .testimony {
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin-bottom: 2.5rem;
+    }
+
+    .person-details-container {
+      display: grid;
+      font-size: 1.4rem;
+    }
+
+    .full-name {
+      font-weight: 700;
+    }
+
+    .occupation {
+      font-weight: 500;
+      color: $grayish-blue;
+    }
+
+    // end of mobile
+  }
+}

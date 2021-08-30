@@ -1,0 +1,23 @@
+html {
+  font-size: 62.5%; //1rem = 10px   10px/16px=62.5%
+
+  body,
+  p {
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .main-container {
+    background-image: url("../images/pattern-curve.svg");
+    font-family: "Inter", sans-serif;
+    padding: 2.3rem;
+    color: $dark-blue;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: calc(100vw - 30%);
+    min-height: 100vh;
+  }
+}
