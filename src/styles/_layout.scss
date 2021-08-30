@@ -11,13 +11,23 @@ html {
   }
 
   .main-container {
-    background-image: url("../images/pattern-curve.svg");
     font-family: "Inter", sans-serif;
-    padding: 2.3rem;
     color: $dark-blue;
+
+    background-image: url("../images/pattern-curve.svg");
     background-repeat: no-repeat;
     background-position-y: bottom;
-    background-size: calc(100vw - 30%);
     min-height: 100vh;
+
+    @include respond(desktop) {
+      background-size: 50vw;
+      padding: 5.5rem 7rem 5.5rem 15rem;
+    }
+
+    @include respond(mobile) {
+      background-size: 70vw;
+
+      padding: 2.3rem;
+    }
   }
 }
