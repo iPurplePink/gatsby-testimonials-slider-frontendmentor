@@ -18,15 +18,17 @@ const Home = () => {
           </div>
         </div>
         <div className="testimony-container">
-          <div className="quotes-icon-container">
-            <SpriteIcon className="quotes-icon" symbolId="pattern-quotes" />
-          </div>
-          <p className="testimony">&#8220;{data.testimony}&#8221;</p>
-          <div className="person-details-container">
-            <span className="full-name">
-              {data.firstName} {data.lastName}
-            </span>
-            <span className="occupation">{data.occupation}</span>
+          <div className="testimony-details-container">
+            <div className="quotes-icon-container">
+              <SpriteIcon className="quotes-icon" symbolId="pattern-quotes" />
+            </div>
+            <p className="testimony">&#8220;{data.testimony}&#8221;</p>
+            <div className="person-details-container">
+              <span className="full-name">
+                {data.firstName} {data.lastName}
+              </span>
+              <span className="occupation">{data.occupation}</span>
+            </div>
           </div>
         </div>
       </div>
