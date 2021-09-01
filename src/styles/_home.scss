@@ -3,7 +3,7 @@
   position: relative;
 
   @include respond(mobile) {
-    max-width: 375px;
+    max-width: 37.5rem;
     .photo-background {
       display: flex;
       align-items: center;
@@ -96,7 +96,7 @@
   }
 
   @include respond(desktop) {
-    max-width: 1440px;
+    max-width: 144rem;
     .photo {
       max-width: 55rem;
       height: 55rem;
