@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
+import { navigate } from "@reach/router";
 import Layout from "../../components/Layout";
 import testimonies from "../../data/testimonies";
 import SpriteIcon from "../../components/SpriteIcon";
-import { navigate } from "@reach/router";
+import SEO from "../../components/SEO";
 
-const Home = ({ testimonyId, location, ...props }) => {
+const Home = ({ testimonyId, location }) => {
   const currentIndex =
     testimonies.findIndex((testimony) => testimony.id == testimonyId) ?? 0;
 
@@ -30,6 +31,11 @@ const Home = ({ testimonyId, location, ...props }) => {
 
   return (
     <Layout>
+      <SEO
+        title={`${data.firstName} ${data.lastName}`}
+        description={data.testimony}
+        article={true}
+      />
       <div className="home-container">
         <div className="photo-container">
           <div className="photo-background">
