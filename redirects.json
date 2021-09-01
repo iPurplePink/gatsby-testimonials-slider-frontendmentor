@@ -1,0 +1,10 @@
+[
+  {
+    "fromPath": "/",
+    "toPath": "/testimony/1"
+  },
+  {
+    "fromPath": "/testimony/",
+    "toPath": "/testimony/1"
+  }
+]

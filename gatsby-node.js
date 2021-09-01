@@ -1,15 +1,14 @@
+const redirects = require("./redirects.json");
+
 exports.createPages = ({ graphql, actions }) => {
   const { createRedirect } = actions;
-  createRedirect({
-    fromPath: "/",
-    toPath: "/testimony/1",
-    isPermanent: true,
-    redirectInBrowser: true,
-  });
-  createRedirect({
-    fromPath: "/testimony",
-    toPath: "/testimony/1",
-    isPermanent: true,
-    redirectInBrowser: true,
-  });
+
+  redirects.forEach((redirect) =>
+    createRedirect({
+      fromPath: redirect.fromPath,
+      toPath: redirect.toPath,
+      isPermanent: true,
+      redirectInBrowser: true,
+    })
+  );
 };
